@@ -1,0 +1,21 @@
+{
+  "name": "carltonjosephdotcom",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "@material-ui/icons": "^1.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "rsync":
+      "rsync -avzL --exclude='node_modules' --exclude='.git' ./build/ carltonj2000@carltonjoseph.com:/mnt/volume-sfo2-01/cj/carltonjosephdotcom/",
+    "toserver": "npm run build && npm run rsync"
+  }
+}
