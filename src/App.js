@@ -29,7 +29,6 @@ const styles = theme => ({
     flexGrow: 1
   },
   appFrame: {
-    height: 430,
     zIndex: 1,
     overflow: "hidden",
     position: "relative",
@@ -100,6 +99,13 @@ const styles = theme => ({
   },
   "contentShift-right": {
     marginRight: 0
+  },
+  centerText: {
+    textAlign: "center",
+    marginBottom: "20px"
+  },
+  skills: {
+    marginTop: "20px"
   }
 });
 
@@ -239,32 +245,51 @@ class PersistentDrawer extends Component {
               )}
             >
               <div className={classes.drawerHeader} />
-              <Typography>
-                This is a place holder. More details coming Soon ...
+              <Typography className={classes.centerText}>
+                Under construction. More details coming soon ...
                 <br />
-                The site previousley hosted has moved to another domain. Email
-                me to get the new location.
+                The site previously hosted here has moved to another domain.
+                Contact me to get the new location.
               </Typography>
               <Divider />
-              <Typography variant="display1">Skills</Typography>
+              <Typography variant="display1" className={classes.skills}>
+                Skills
+              </Typography>
               <List>
                 <ListItem button>
-                  <ListItemText primary="React, React Native" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <CameraIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Photography" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <HikingIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Hiking" />
+                  <ListItemText primary="React, React Native, Redux, React Router, Express" />
                 </ListItem>
               </List>
-              <Typography variant="body1" />
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
+                Under Development
+              </Typography>
+              <List>
+                <ListItem button>
+                  <ListItemText primary="Server Side Rendering, GraphQl, Relay Modern, PWA, Electron, RxJs, ReasonML" />
+                </ListItem>
+              </List>
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
+                Historical
+              </Typography>
+              <List>
+                <ListItem button>
+                  <ListItemText primary="PHP, JQuery, SQL" />
+                </ListItem>
+              </List>
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
+                Support
+              </Typography>
+              <List>
+                <ListItem button>
+                  <ListItemText primary="Docker, Apache, Nginx, Caddy, HTTPS, OAUTH" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemText primary="" />
+                </ListItem>
+              </List>
             </main>
             {after}
           </div>
