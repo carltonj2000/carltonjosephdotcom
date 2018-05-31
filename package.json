@@ -15,7 +15,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "rsync":
-      "rsync -avzL --exclude='node_modules' --exclude='.git' ./build/ carltonj2000@carltonjoseph.com:/mnt/volume-sfo2-01/cj/carltonjosephdotcom/",
+      "rsync -avzL --exclude='node_modules' --exclude='.git' ./build/ carltonj2000@carltonjoseph.com:/mnt/volume-sfo2-01/cj/carltonathomedotcom/",
     "toserver": "npm run build && npm run rsync"
   }
 }

@@ -22,6 +22,9 @@ import MotorcycleIcon from "@material-ui/icons/Motorcycle";
 import CameraIcon from "@material-ui/icons/CameraAlt";
 import HikingIcon from "@material-ui/icons/DirectionsWalk";
 import SideProjectsIcon from "@material-ui/icons/AssignmentReturn";
+
+import docker from "./images/web_docker_servers.svg";
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -253,6 +256,15 @@ class PersistentDrawer extends Component {
               </Typography>
               <Divider />
               <Typography variant="display1" className={classes.skills}>
+                Objective
+              </Typography>
+              <List>
+                <ListItem button>
+                  <ListItemText primary="Move into web and mobile application development after many years in the embedded space." />
+                </ListItem>
+              </List>
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
                 Skills
               </Typography>
               <List>
@@ -275,7 +287,7 @@ class PersistentDrawer extends Component {
               </Typography>
               <List>
                 <ListItem button>
-                  <ListItemText primary="PHP, JQuery, SQL" />
+                  <ListItemText primary="PHP, JQuery, SQL, C#" />
                 </ListItem>
               </List>
               <Divider />
@@ -284,12 +296,58 @@ class PersistentDrawer extends Component {
               </Typography>
               <List>
                 <ListItem button>
-                  <ListItemText primary="Docker, Apache, Nginx, Caddy, HTTPS, OAUTH" />
+                  <ListItemText primary="Docker, Apache, Nginx, Caddy, HTTPS, OAUTH, Python, Go" />
                 </ListItem>
                 <ListItem button>
                   <ListItemText primary="" />
                 </ListItem>
               </List>
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
+                Docker Setup Redesign
+              </Typography>
+              <img src={docker} alt="Docker Setup Redesign" />
+              <Divider />
+              <Typography variant="display1" className={classes.skills}>
+                Projects
+              </Typography>
+              <ul>
+                <li>
+                  <Typography variant="">
+                    <a href="http://tinaandcarlton.com">
+                      3 React sites with docker routing on the front end
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="">
+                    <a href="https://github.com/carltonwin8/mobile-flashcards">
+                      React Native
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="">
+                    <a href="http://carltonwin8.com">
+                      Site with HTML, CSS &amp; JavaScript and no React.
+                    </a>&nbsp; The map section of the site is presently broken.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="">
+                    <a href="http://appsfortracking.com">
+                      React site with OAUTH and a Firebase Store DB backend.
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="">
+                    <a href="https://github.com/carltonwin8/strip-led-control">
+                      Raspberry Pi Project.
+                    </a>
+                  </Typography>
+                </li>
+              </ul>
             </main>
             {after}
           </div>
